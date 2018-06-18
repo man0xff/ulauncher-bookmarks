@@ -10,29 +10,31 @@
   },
   "preferences": [
     {
-      "id": "bookmarks",
+      "id": "keyword",
       "type": "keyword",
       "name": "Invocation",
       "description": "Type this keyword and space to activate search",
       "default_value": "b"
     },
     {
+      "id": "browser",
+      "type": "select",
+      "name": "Browser",
+      "description": "Choose your browser",
+      "default_value": "chromium",
+      "options": [
+        {"value": "chromium", "text": "Chromium"},
+        {"value": "google",   "text": "Google Chrome"},
+        {"value": "yandex",   "text": "Yandex Browser"},
+        {"value": "custom",   "text": "Custom (select file manually)"}
+      ]
+    },
+    {
       "id": "bookmarks_file",
       "type": "input",
       "name": "Chromium Bookmarks File",
       "description": "Bookmarks file in Chromium format",
-      "default_value": "~/.config/yandex-browser-beta/Default/Bookmarks"
-    },
-    {
-      "id": "browser_type",
-      "type": "select",
-      "name": "Browser Type",
-      "description": "Choose your browser",
-      "default_value": "yandex_browser",
-      "options": [
-        {"value": "yandex_browser", "text": "Yandex Browser"},
-        {"value": "google_chrome",  "text": "Google Chrome"}
-      ]
+      "default_value": ""
     }
   ]
 }
