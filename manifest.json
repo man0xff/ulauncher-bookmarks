@@ -1,0 +1,38 @@
+{
+  "manifest_version": "2",
+  "api_version": "1",
+  "name": "Bookmarks Fuzzy Search",
+  "description": "Fuzzy search on browser bookmarks.",
+  "developer_name": "Oleg Kovalev",
+  "icon": "images/bookmark.svg",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "bookmarks",
+      "type": "keyword",
+      "name": "Invocation",
+      "description": "Type this keyword and space to activate search",
+      "default_value": "b"
+    },
+    {
+      "id": "bookmarks_file",
+      "type": "input",
+      "name": "Chromium Bookmarks File",
+      "description": "Bookmarks file in Chromium format",
+      "default_value": "~/.config/yandex-browser-beta/Default/Bookmarks"
+    },
+    {
+      "id": "browser_type",
+      "type": "select",
+      "name": "Browser Type",
+      "description": "Choose your browser",
+      "default_value": "yandex_browser",
+      "options": [
+        {"value": "yandex_browser", "text": "Yandex Browser"},
+        {"value": "google_chrome",  "text": "Google Chrome"}
+      ]
+    }
+  ]
+}
